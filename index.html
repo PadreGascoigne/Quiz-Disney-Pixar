@@ -4,366 +4,409 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
     <title>Quiz - Automóveis</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-   <div class="cabecalho">
-    <h1>Bem vindo ao Quiz sobre a Disney</h1>
-    <img src="./images/Pixar-Logo-removebg-preview.png">
-   </div>
-   <div class="texto">
-    <P>
-        Esse é um quiz de 10 perguntas elaborado por estudantes do primeiro semestre de Ciências da Computação. Nele abordamos o tema Disney PIXAR, onde 
-        o jogador testará seus conhecimentos nas melhores animações do planeta. 
-    </P>
-    <h2>Desfrute da melhor experiência que você terá com um quiz em toda sua vida! </h2>
-   </div>
-   <div id="botao">
-       <a href="Perguntas/Pergunta1.html"><button >Jogar!</button></a>
-   </div>
-   <div id="p1">
+    <div class="inicio" id="p0">
+        <div class="cabecalho">
+            <h1>Bem vindo ao Quiz sobre a Disney</h1>
+            <img src=".//images/Pixar.gif">
+        </div>
+        <div class="texto">
+            <P>
+                Esse é um quiz de 10 perguntas elaborado por estudantes do primeiro semestre de Ciência da Computação. Nele abordamos o tema Disney PIXAR, onde 
+                o jogador testará seus conhecimentos nas melhores animações do planeta. 
+            </P>
+            <h2>Desfrute da melhor experiência que você terá com um quiz em toda sua vida! </h2>
+        </div>
+        <div onclick="proxima()" id="botao">
+            <button >Jogar!</button>
+        </div>
+    </div>
+   <div class="perguntas" id="p1">
         <div class="cabecalho">
             <h3>Pergunta 01</h3>
             <img src="./images/incriveisp1.jpg">
             <h4>Qual o nome vilão principal do filme Os Incríveis lançado em 2005?</h4>
         </div>
         <div class="alternativas" id="p1-alternativas">
-            <button id="p1a" onclick="perguntas('1', 'c')" class="errado">
+            <button id="p1a" onclick="perguntas('1', 'c', 'a')" class="errado">
                 <div>
                     <p>A - Gurincrivel</p>
                 </div>
             </button>
             <br>
-            <button id="p1b" onclick="perguntas('1', 'c')" class="errado">
+            <button id="p1b" onclick="perguntas('1', 'c', event)" class="errado">
                 <div>
                     <p>B - Bochecha</p>
                 </div>
             </button>
             <br>
-            <button id="p1c" onclick="perguntas('1', 'c')" class="certo">
+            <button id="p1c" onclick="perguntas('1', 'c', event)" class="certo">
                 <div>
                     <p>C - Síndrome</p>
                 </div>
             </button>
             <br>
-            <button id="p1d" onclick="perguntas('1', 'c')"  class="errado">
+            <button id="p1d" onclick="perguntas('1', 'c', event)"  class="errado">
                 <div>
                     <p>D - Bon Voyage</p>
                 </div>
             </button>
             <br>
-            <div class="proxima">
-                Próxima questão
+            <div onclick="proxima()" class="proxima">
+                <img src="./images/keyboard_double_arrow_right_FILL0_wght700_GRAD0_opsz48.png">
             </div>
         </div>
         
    </div>
-   <div id="p2">
+   <div class="perguntas" id="p2">
     <div class="cabecalho">
         <h3>Pergunta 02</h3>
         <img src="./images/enroladosp2.jfif">
         <h4>A animação Enrolados (2010) é baseada em qual outra obra da Disney?</h4>
     </div>
     <div class="alternativas" id="p2-alternativas">
-        <button id="p2a" onclick="perguntas('2', 'b')" class="errado">
+        <button id="p2a" onclick="perguntas('2', 'b', 'a')" class="errado">
             <div>
                 <p>A - Branca de Neve</p>
             </div>
         </button>
         <br>
-        <button id="p2b" onclick="perguntas('2', 'b')" class="certo">
+        <button id="p2b" onclick="perguntas('2', 'b', event)" class="certo">
             <div>
                 <p>B - Rapunzel</p>
             </div>
         </button>
         <br>
-        <button id="p2c" onclick="perguntas('2', 'b')" class="errado">
+        <button id="p2c" onclick="perguntas('2', 'b', event)" class="errado">
             <div>
                 <p>C - Cinderela</p>
             </div>
         </button>
         <br>
-        <button id="p2d" onclick="perguntas('2', 'b')" class="errado">
+        <button id="p2d" onclick="perguntas('2', 'b', event)" class="errado">
             <div>
                 <p>D - A Bela Adormecida</p>
             </div>
         </button>
+        <br>
+            <div onclick="proxima()" class="proxima">
+                <img src="./images/keyboard_double_arrow_right_FILL0_wght700_GRAD0_opsz48.png">
+            </div>
     </div>
 
    </div>
-   <div id="p3">
+   <div class="perguntas" id="p3">
     <div class="cabecalho">
         <h3>Pergunta 03</h3>
-        <img src="./images/Toy-Story-2-Buzz-Lightyear-with-Zurg-as-Father.webp">
+        <img src="./images/7.-toy-story-2.jpeg">
         <h4>Em uma cena de Toy Story 2, Buzz e Zurg protagonizam uma cena no elevador que faz referência a uma saga de filmes de muito sucesso. Qual saga é essa?</h4>
     </div>
     <div class="alternativas" id="p3-alternativas">
-        <button id="p3a" onclick="perguntas('3', 'b')" class="errado">
+        <button id="p3a" onclick="perguntas('3', 'b', 'a')" class="errado">
             <div>
                 <p>A - O Senhor dos Anéis</p>
             </div>
         </button>
         <br>
-        <button id="p3b" onclick="perguntas('3', 'b')" class="certo">
+        <button id="p3b" onclick="perguntas('3', 'b', event)" class="certo">
             <div>
                 <p>B - Star Wars</p>
             </div>
         </button>
         <br>
-        <button id="p3c" onclick="perguntas('3', 'b')" class="errado">
+        <button id="p3c" onclick="perguntas('3', 'b', event)" class="errado">
             <div>
                 <p>C - Harry Potter</p>
             </div>
         </button>
         <br>
-        <button id="p3d" onclick="perguntas('3', 'b')" class="errado">
+        <button id="p3d" onclick="perguntas('3', 'b', event)" class="errado">
             <div>
                 <p>D - Star Trek</p>
             </div>
         </button>
+        <br>
+            <div onclick="proxima()" class="proxima">
+                <img src="./images/keyboard_double_arrow_right_FILL0_wght700_GRAD0_opsz48.png">
+            </div>
     </div>
 
    </div>
-   <div id="p4">
+   <div class="perguntas" id="p4">
     <div class="cabecalho">
         <h3>Pergunta 04</h3>
         <img src="./images/monsterincp4.jfif">
         <h4>Em Monstros SA, Mike e Sully são banidos e vão parar no mundo humano. Em qual lugar eles foram parar?</h4>
     </div>
     <div class="alternativas" id="p4-alternativas">
-        <button id="p4a" onclick="perguntas('4', 'a')" class="certo">
+        <button id="p4a" onclick="perguntas('4', 'a', 'a')" class="certo">
             <div>
                 <p>A - Himalaia</p>
             </div>
         </button>
         <br>
-        <button id="p4b" onclick="perguntas('4', 'a')" class="errado">
+        <button id="p4b" onclick="perguntas('4', 'a', event)" class="errado">
             <div>
                 <p>B - Tokyo</p>
             </div>
         </button>
         <br>
-        <button id="p4c"onclick="perguntas('4', 'a')" class="errado">
+        <button id="p4c"onclick="perguntas('4', 'a', event)" class="errado">
             <div>
                 <p>C - Grand Canyon</p>
             </div>
         </button>
         <br>
-        <button id="p4d" onclick="perguntas('4', 'a')" class="errado">
+        <button id="p4d" onclick="perguntas('4', 'a', event)" class="errado">
             <div>
                 <p>D - Orlando</p>
             </div>
         </button>
+        <br>
+            <div onclick="proxima()" class="proxima">
+                <img src="./images/keyboard_double_arrow_right_FILL0_wght700_GRAD0_opsz48.png">
+            </div>
     </div>
 
    </div>
-   <div id="p5">
+   <div class="perguntas" id="p5">
     <div class="cabecalho">
         <h3>Pergunta 05</h3>
         <img src="./images/opbigherop5.jfif">
         <h4>Qual o nome do robô ajudante em Operação Big Hero?</h4>
     </div>
     <div class="alternativas" id="p5-alternativas">
-        <button id="p5a" onclick="perguntas('5', 'a')" class="certo">
+        <button id="p5a" onclick="perguntas('5', 'a', 'a')" class="certo">
             <div>
                 <p>A - Baymax</p>
             </div>
         </button>
         <br>
-        <button id="p5b" onclick="perguntas('5', 'a')" class="errado">
+        <button id="p5b" onclick="perguntas('5', 'a', event)" class="errado">
             <div>
                 <p>B - BMO</p>
             </div>
         </button>
         <br>
-        <button id="p5c" onclick="perguntas('5', 'a')" class="errado">
+        <button id="p5c" onclick="perguntas('5', 'a', event)" class="errado">
             <div>
                 <p>C - R2D2</p>
             </div>
         </button>
         <br>
-        <button id="p5d" onclick="perguntas('5', 'a')" class="errado">
+        <button id="p5d" onclick="perguntas('5', 'a', event)" class="errado">
             <div>
                 <p>D - Optimus Prime</p>
             </div>
         </button>
+        <br>
+            <div onclick="proxima()" class="proxima">
+                <img src="./images/keyboard_double_arrow_right_FILL0_wght700_GRAD0_opsz48.png">
+            </div>
     </div>
 
    </div>
-   <div id="p6">
+   <div class="perguntas" id="p6">
     <div class="cabecalho">
         <h3>Pergunta 06</h3>
-        <img src="./images/divertidamentep5.webp">
+        <img src="./images/rs_1024x576-150929062416-1024.inside-out-anderson-family.92915.jpeg">
         <h4>Quais são as emoções apresentadas em Divertidamente?</h4>
     </div>
     <div class="alternativas" id="p6-alternativas">
-        <button id="p6a" onclick="perguntas('6', 'c')" class="errado">
+        <button id="p6a" onclick="perguntas('6', 'c', 'a')" class="errado">
             <div>
                 <p>A - Raiva, Angústia, Medo, solidão e paixão.</p>
             </div>
         </button>
         <br>
-        <button id="p6b" onclick="perguntas('6', 'c')" class="errado">
+        <button id="p6b" onclick="perguntas('6', 'c', 'b')" class="errado">
             <div>
                 <p>B - Nojo, Satisfação, alegria, depressão e medo.</p>
             </div>
         </button>
         <br>
-        <button id="p6c" onclick="perguntas('6', 'c')" class="certo">
+        <button id="p6c" onclick="perguntas('6', 'c', 'c')" class="certo">
             <div>
                 <p>C - Raiva, Alegria, Tristeza, Medo e Nojo</p>
             </div>
         </button>
         <br>
-        <button id="p6d" onclick="perguntas('6', 'c')" class="errado">
+        <button id="p6d" onclick="perguntas('6', 'c', 'd')" class="errado">
             <div>
                 <p>D - Coragem, Alegria, Amargura, Rancor e Nojo.</p>
             </div>
         </button>
+        <br>
+            <div onclick="proxima()" class="proxima">
+                <img src="./images/keyboard_double_arrow_right_FILL0_wght700_GRAD0_opsz48.png">
+            </div>
     </div>
 
    </div>
-   <div id="p7">
+   <div class="perguntas" id="p7">
     <div class="cabecalho">
         <h3>Pergunta 07</h3>
         <img src="./images/detona-ralph.jpg">
         <h4>No filme Detona Ralph, Venelope não pode sair do jogo Corrida Doce pois ela é um...        </h4>
     </div>
     <div class="alternativas" id="p7-alternativas">
-        <button id="p7a" onclick="perguntas('7', 'd')"class="errado">
+        <button id="p7a" onclick="perguntas('7', 'd', event)"class="errado">
             <div>
                 <p>A - Perigo à sociedade</p>
             </div>
         </button>
         <br>
-        <button id="p7b" onclick="perguntas('7', 'd')" class="errado">
+        <button id="p7b" onclick="perguntas('7', 'd', event)" class="errado">
             <div>
                 <p>B - Clone</p>
             </div>
         </button>
         <br>
-        <button id="p7c" onclick="perguntas('7', 'd')" class="errado">
+        <button id="p7c" onclick="perguntas('7', 'd', event)" class="errado">
             <div>
                 <p>C - Vírus</p>
             </div>
         </button>
         <br>
-        <button id="p7d" onclick="perguntas('7', 'd')" class="certo">
+        <button id="p7d" onclick="perguntas('7', 'd', event)" class="certo">
             <div>
                 <p>D - Bug</p>
             </div>
         </button>
+        <br>
+            <div onclick="proxima()" class="proxima">
+                <img src="./images/keyboard_double_arrow_right_FILL0_wght700_GRAD0_opsz48.png">
+            </div>
     </div>
 
    </div>
-   <div id="p8">
+   <div class="perguntas" id="p8">
     <div class="cabecalho">
         <h3>Pergunta 08</h3>
         <img src="./images/carros2.jpg">
         <h4>Em Carros 2, em quais cidades foi realizada o Grand Prix Mundial?</h4>
     </div>
     <div class="alternativas" id="p8-alternativas">
-        <button id="p8a" onclick="perguntas('8', 'a')" class="certo">
+        <button id="p8a" onclick="perguntas('8', 'a', event)" class="certo">
             <div>
                 <p>A - Tokyo, Porto Corsa e Londres</p>
             </div>
         </button>
         <br>
-        <button id="p8b" onclick="perguntas('8', 'a')" class="errado">
+        <button id="p8b" onclick="perguntas('8', 'a', event)" class="errado">
             <div>
                 <p>B - Paris, São Paulo e Bahia</p>
             </div>
         </button>
         <br>
-        <button id="p8c" onclick="perguntas('8', 'a')" class="errado">
+        <button id="p8c" onclick="perguntas('8', 'a', event)" class="errado">
             <div>
                 <p>C - Nova York, Veneza e Vancouver</p>
             </div>
         </button>
         <br>
-        <button id="p8d" onclick="perguntas('8', 'a')" class="errado">
+        <button id="p8d" onclick="perguntas('8', 'a', event)" class="errado">
             <div>
                 <p>D - Berlim, Hong Kong e Kiev</p>
             </div>
         </button>
+        <br>
+            <div onclick="proxima()" class="proxima">
+                <img src="./images/keyboard_double_arrow_right_FILL0_wght700_GRAD0_opsz48.png">
+            </div>
     </div>
 
    </div>
-   <div id="p9">
+   <div class="perguntas" id="p9">
     <div class="cabecalho">
         <h3>Pergunta 09</h3>
         <img src="./images/walle.jfif">
         <h4>Em Walle, o que continha no recipiente em que os personagens principais estavam carregando durante o filme?</h4>
     </div>
     <div class="alternativas" id="p9-alternativas">
-        <button id="p9a" onclick="perguntas('9', 'c')" class="errado">
+        <button id="p9a" onclick="perguntas('9', 'c', event)" class="errado">
             <div>
                 <p>A - Terra</p>
             </div>
         </button>
         <br>
-        <button id="p9b" onclick="perguntas('9', 'c')" class="errado">
+        <button id="p9b" onclick="perguntas('9', 'c', event)" class="errado">
             <div>
                 <p>B - Armas biológicas</p>
             </div>
         </button>
         <br>
-        <button id="p9c" onclick="perguntas('9', 'c')" class="certo">
+        <button id="p9c" onclick="perguntas('9', 'c', event)" class="certo">
             <div>
                 <p>C - Uma planta</p>
             </div>
         </button>
         <br>
-        <button id="p9d" onclick="perguntas('9', 'c')" class="errado">
+        <button id="p9d" onclick="perguntas('9', 'c', event)" class="errado">
             <div>
                 <p>D - Cubos de gelo</p>
             </div>
         </button>
+        <br>
+            <div onclick="proxima()" class="proxima">
+                <img src="./images/keyboard_double_arrow_right_FILL0_wght700_GRAD0_opsz48.png">
+            </div>
     </div>
 
    </div>
-   <div id="p10">
+   <div class="perguntas" id="p10">
     <div class="cabecalho">
         <h3>Pergunta 10</h3>
         <img src="./images/up.jpg">
         <h4>Em Up Altas Aventuras, o lugar Paraíso das Cachoeiras fica situado em qual país?</h4>
     </div>
     <div class="alternativas" id="p10-alternativas">
-        <button id="p10a" onclick="perguntas('10', 'd')" class="errado">
+        <button id="p10a" onclick="perguntas('10', 'd', event)" class="errado">
             <div>
                 <p>A - Bósnia</p>
             </div>
         </button>
         <br>
-        <button id="p10b" onclick="perguntas('10', 'd')" class="errado">
+        <button id="p10b" onclick="perguntas('10', 'd', event)" class="errado">
             <div>
                 <p>B - Austrália</p>
             </div>
         </button>
         <br>
-        <button id="p10c" onclick="perguntas('10', 'd')" class="errado">
+        <button id="p10c" onclick="perguntas('10', 'd', event)" class="errado">
             <div>
                 <p>C - Lituânia</p>
             </div>
         </button>
         <br>
-        <button id="p10d" onclick="perguntas('10', 'd')" class="certo">
+        <button id="p10d" onclick="perguntas('10', 'd', event)" class="certo">
             <div>
                 <p>D - Venezuela</p>
             </div>
         </button>
+        <br>
+            <div onclick="proxima()" class="proxima">
+                <img src="./images/keyboard_double_arrow_right_FILL0_wght700_GRAD0_opsz48.png">
+            </div>
     </div>
-
    </div>
-   <div class="cabecalho">
-       <h1>Parabéns</h1>
-       <h2>VOCÊ ACERTOU</h2>
-       <h1></h1>
-       <button class="tentarNovamente">JOGAR NOVAMENTE</button>
-   </div>
+   <div class="perguntas" id="p11">
+        <div class="cabecalho">
+            <h1>Parabéns</h1>
+            <h2>VOCÊ ACERTOU</h2>
+            <h1 id="numAcertos"></h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nMN4JZ8crVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <br>
+            <a href="./index.html"><button class="tentarNovamente">JOGAR NOVAMENTE</button></a>
+        </div>
+    </div>
    <div id="tentarNovamente">
-        <button>TENTAR<br>NOVAMENTE</button>
+        <a href="./index.html"><button>TENTAR<br>NOVAMENTE</button></a>
 </div>
    <script src="./script.js"></script>
 </body>

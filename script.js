@@ -1,6 +1,7 @@
 var pontos = 0;
+var questao = 0;
 
-function perguntas(pergunta, alternativaCerta){
+function perguntas(pergunta, alternativaCerta, tentativa){
 
     //div com id ex: p1-alternativas
     const alternativas = document.getElementById('p' + pergunta + '-alternativas');
@@ -13,11 +14,30 @@ function perguntas(pergunta, alternativaCerta){
     const botaoCerto = document.getElementById('p' + pergunta + alternativaCerta);
     botaoCerto.style.backgroundColor = 'green';
 
-    if (botaoCerto == alternativaCerta) {
+    if (tentativa == alternativaCerta) {
         pontos++;
+        console.log(pontos);
     }
 }
 
+function mostrarPontos() {
+    const pontuacao = document.getElementById('numAcertos');
+    pontuacao.innerText = pontos + "/10";
+}
+
 function proxima() {
+    questao++;
+    const questaoAtual = document.getElementById('p' + questao);
+    const questaoAnterior = document.getElementById('p' + (questao - 1));
+    const inicio = document.getElementById('p' + (questao - 1));
+    const tentarNovamente = document
     
+    questaoAtual.style.display = 'flex';
+    questaoAtual.style.backgroundcolor = '#6b3ebe';
+    questaoAnterior.style.display = 'none';
+    inicio.style.display = 'none';
+    
+    if (questao == 11) {
+        mostrarPontos();
+    }
 }
