@@ -12,7 +12,7 @@
     <div class="inicio" id="p0">
         <div class="cabecalho">
             <h1>Bem vindo ao Quiz sobre a Disney</h1>
-            <img src=".//images/Pixar.gif">
+            <img id="pixarLogo" src=".//images/Pixar.gif">
         </div>
         <div class="texto">
             <P>
@@ -28,7 +28,7 @@
    <div class="perguntas" id="p1">
         <div class="cabecalho">
             <h3>Pergunta 01</h3>
-            <img src="./images/incriveisp1.jpg">
+            <img class="menorh" src="./images/incriveisp1.jpg">
             <h4>Qual o nome vilão principal do filme Os Incríveis lançado em 2005?</h4>
         </div>
         <div class="alternativas" id="p1-alternativas">
@@ -38,19 +38,19 @@
                 </div>
             </button>
             <br>
-            <button id="p1b" onclick="perguntas('1', 'c', event)" class="errado">
+            <button id="p1b" onclick="perguntas('1', 'c', 'b')" class="errado">
                 <div>
                     <p>B - Bochecha</p>
                 </div>
             </button>
             <br>
-            <button id="p1c" onclick="perguntas('1', 'c', event)" class="certo">
+            <button id="p1c" onclick="perguntas('1', 'c', 'c')" class="certo">
                 <div>
                     <p>C - Síndrome</p>
                 </div>
             </button>
             <br>
-            <button id="p1d" onclick="perguntas('1', 'c', event)"  class="errado">
+            <button id="p1d" onclick="perguntas('1', 'c', 'd')"  class="errado">
                 <div>
                     <p>D - Bon Voyage</p>
                 </div>
@@ -75,19 +75,19 @@
             </div>
         </button>
         <br>
-        <button id="p2b" onclick="perguntas('2', 'b', event)" class="certo">
+        <button id="p2b" onclick="perguntas('2', 'b', 'b')" class="certo">
             <div>
                 <p>B - Rapunzel</p>
             </div>
         </button>
         <br>
-        <button id="p2c" onclick="perguntas('2', 'b', event)" class="errado">
+        <button id="p2c" onclick="perguntas('2', 'b', 'c')" class="errado">
             <div>
                 <p>C - Cinderela</p>
             </div>
         </button>
         <br>
-        <button id="p2d" onclick="perguntas('2', 'b', event)" class="errado">
+        <button id="p2d" onclick="perguntas('2', 'b', 'd')" class="errado">
             <div>
                 <p>D - A Bela Adormecida</p>
             </div>
@@ -102,7 +102,7 @@
    <div class="perguntas" id="p3">
     <div class="cabecalho">
         <h3>Pergunta 03</h3>
-        <img src="./images/7.-toy-story-2.jpeg">
+        <img class="menorh" src="./images/7.-toy-story-2.jpeg">
         <h4>Em uma cena de Toy Story 2, Buzz e Zurg protagonizam uma cena no elevador que faz referência a uma saga de filmes de muito sucesso. Qual saga é essa?</h4>
     </div>
     <div class="alternativas" id="p3-alternativas">
@@ -112,19 +112,19 @@
             </div>
         </button>
         <br>
-        <button id="p3b" onclick="perguntas('3', 'b', event)" class="certo">
+        <button id="p3b" onclick="perguntas('3', 'b', 'b')" class="certo">
             <div>
                 <p>B - Star Wars</p>
             </div>
         </button>
         <br>
-        <button id="p3c" onclick="perguntas('3', 'b', event)" class="errado">
+        <button id="p3c" onclick="perguntas('3', 'b', 'c')" class="errado">
             <div>
                 <p>C - Harry Potter</p>
             </div>
         </button>
         <br>
-        <button id="p3d" onclick="perguntas('3', 'b', event)" class="errado">
+        <button id="p3d" onclick="perguntas('3', 'b', 'd')" class="errado">
             <div>
                 <p>D - Star Trek</p>
             </div>
@@ -149,19 +149,19 @@
             </div>
         </button>
         <br>
-        <button id="p4b" onclick="perguntas('4', 'a', event)" class="errado">
+        <button id="p4b" onclick="perguntas('4', 'a', 'b')" class="errado">
             <div>
                 <p>B - Tokyo</p>
             </div>
         </button>
         <br>
-        <button id="p4c"onclick="perguntas('4', 'a', event)" class="errado">
+        <button id="p4c"onclick="perguntas('4', 'a', 'c')" class="errado">
             <div>
                 <p>C - Grand Canyon</p>
             </div>
         </button>
         <br>
-        <button id="p4d" onclick="perguntas('4', 'a', event)" class="errado">
+        <button id="p4d" onclick="perguntas('4', 'a', 'd')" class="errado">
             <div>
                 <p>D - Orlando</p>
             </div>
@@ -186,19 +186,19 @@
             </div>
         </button>
         <br>
-        <button id="p5b" onclick="perguntas('5', 'a', event)" class="errado">
+        <button id="p5b" onclick="perguntas('5', 'a', 'b')" class="errado">
             <div>
                 <p>B - BMO</p>
             </div>
         </button>
         <br>
-        <button id="p5c" onclick="perguntas('5', 'a', event)" class="errado">
+        <button id="p5c" onclick="perguntas('5', 'a', 'c')" class="errado">
             <div>
                 <p>C - R2D2</p>
             </div>
         </button>
         <br>
-        <button id="p5d" onclick="perguntas('5', 'a', event)" class="errado">
+        <button id="p5d" onclick="perguntas('5', 'a', 'd')" class="errado">
             <div>
                 <p>D - Optimus Prime</p>
             </div>
@@ -250,29 +250,29 @@
    <div class="perguntas" id="p7">
     <div class="cabecalho">
         <h3>Pergunta 07</h3>
-        <img src="./images/detona-ralph.jpg">
+        <img class="menorh" src="./images/detona-ralph.jpg">
         <h4>No filme Detona Ralph, Venelope não pode sair do jogo Corrida Doce pois ela é um...        </h4>
     </div>
     <div class="alternativas" id="p7-alternativas">
-        <button id="p7a" onclick="perguntas('7', 'd', event)"class="errado">
+        <button id="p7a" onclick="perguntas('7', 'd', 'a')"class="errado">
             <div>
                 <p>A - Perigo à sociedade</p>
             </div>
         </button>
         <br>
-        <button id="p7b" onclick="perguntas('7', 'd', event)" class="errado">
+        <button id="p7b" onclick="perguntas('7', 'd', 'b')" class="errado">
             <div>
                 <p>B - Clone</p>
             </div>
         </button>
         <br>
-        <button id="p7c" onclick="perguntas('7', 'd', event)" class="errado">
+        <button id="p7c" onclick="perguntas('7', 'd', 'c')" class="errado">
             <div>
                 <p>C - Vírus</p>
             </div>
         </button>
         <br>
-        <button id="p7d" onclick="perguntas('7', 'd', event)" class="certo">
+        <button id="p7d" onclick="perguntas('7', 'd', 'd')" class="certo">
             <div>
                 <p>D - Bug</p>
             </div>
@@ -287,29 +287,29 @@
    <div class="perguntas" id="p8">
     <div class="cabecalho">
         <h3>Pergunta 08</h3>
-        <img src="./images/carros2.jpg">
+        <img class="menorh" src="./images/carros2.jpg">
         <h4>Em Carros 2, em quais cidades foi realizada o Grand Prix Mundial?</h4>
     </div>
     <div class="alternativas" id="p8-alternativas">
-        <button id="p8a" onclick="perguntas('8', 'a', event)" class="certo">
+        <button id="p8a" onclick="perguntas('8', 'a', 'a')" class="certo">
             <div>
                 <p>A - Tokyo, Porto Corsa e Londres</p>
             </div>
         </button>
         <br>
-        <button id="p8b" onclick="perguntas('8', 'a', event)" class="errado">
+        <button id="p8b" onclick="perguntas('8', 'a', 'b')" class="errado">
             <div>
                 <p>B - Paris, São Paulo e Bahia</p>
             </div>
         </button>
         <br>
-        <button id="p8c" onclick="perguntas('8', 'a', event)" class="errado">
+        <button id="p8c" onclick="perguntas('8', 'a', 'c')" class="errado">
             <div>
                 <p>C - Nova York, Veneza e Vancouver</p>
             </div>
         </button>
         <br>
-        <button id="p8d" onclick="perguntas('8', 'a', event)" class="errado">
+        <button id="p8d" onclick="perguntas('8', 'a', 'd')" class="errado">
             <div>
                 <p>D - Berlim, Hong Kong e Kiev</p>
             </div>
@@ -328,25 +328,25 @@
         <h4>Em Walle, o que continha no recipiente em que os personagens principais estavam carregando durante o filme?</h4>
     </div>
     <div class="alternativas" id="p9-alternativas">
-        <button id="p9a" onclick="perguntas('9', 'c', event)" class="errado">
+        <button id="p9a" onclick="perguntas('9', 'c', 'a')" class="errado">
             <div>
                 <p>A - Terra</p>
             </div>
         </button>
         <br>
-        <button id="p9b" onclick="perguntas('9', 'c', event)" class="errado">
+        <button id="p9b" onclick="perguntas('9', 'c', 'b')" class="errado">
             <div>
                 <p>B - Armas biológicas</p>
             </div>
         </button>
         <br>
-        <button id="p9c" onclick="perguntas('9', 'c', event)" class="certo">
+        <button id="p9c" onclick="perguntas('9', 'c', 'c')" class="certo">
             <div>
                 <p>C - Uma planta</p>
             </div>
         </button>
         <br>
-        <button id="p9d" onclick="perguntas('9', 'c', event)" class="errado">
+        <button id="p9d" onclick="perguntas('9', 'c', 'd')" class="errado">
             <div>
                 <p>D - Cubos de gelo</p>
             </div>
@@ -365,25 +365,25 @@
         <h4>Em Up Altas Aventuras, o lugar Paraíso das Cachoeiras fica situado em qual país?</h4>
     </div>
     <div class="alternativas" id="p10-alternativas">
-        <button id="p10a" onclick="perguntas('10', 'd', event)" class="errado">
+        <button id="p10a" onclick="perguntas('10', 'd', 'a')" class="errado">
             <div>
                 <p>A - Bósnia</p>
             </div>
         </button>
         <br>
-        <button id="p10b" onclick="perguntas('10', 'd', event)" class="errado">
+        <button id="p10b" onclick="perguntas('10', 'd', 'b')" class="errado">
             <div>
                 <p>B - Austrália</p>
             </div>
         </button>
         <br>
-        <button id="p10c" onclick="perguntas('10', 'd', event)" class="errado">
+        <button id="p10c" onclick="perguntas('10', 'd', 'c')" class="errado">
             <div>
                 <p>C - Lituânia</p>
             </div>
         </button>
         <br>
-        <button id="p10d" onclick="perguntas('10', 'd', event)" class="certo">
+        <button id="p10d" onclick="perguntas('10', 'd', 'd')" class="certo">
             <div>
                 <p>D - Venezuela</p>
             </div>
@@ -397,9 +397,9 @@
    <div class="perguntas" id="p11">
         <div class="cabecalho">
             <h1>Parabéns</h1>
-            <h2>VOCÊ ACERTOU</h2>
+            <h2 id="acertos">VOCÊ ACERTOU</h2>
             <h1 id="numAcertos"></h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/nMN4JZ8crVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NONzAwlRIVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <br>
             <br>
             <a href="./index.html"><button class="tentarNovamente">JOGAR NOVAMENTE</button></a>

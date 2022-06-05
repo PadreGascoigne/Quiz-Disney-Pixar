@@ -1,6 +1,9 @@
 var pontos = 0;
 var questao = 0;
 
+var tryAgain = document.getElementById("tentarNovamente");
+tryAgain.style.display = 'none';
+
 function perguntas(pergunta, alternativaCerta, tentativa){
 
     //div com id ex: p1-alternativas
@@ -36,8 +39,10 @@ function proxima() {
     questaoAtual.style.backgroundcolor = '#6b3ebe';
     questaoAnterior.style.display = 'none';
     inicio.style.display = 'none';
+    tryAgain.style.display = 'flex';
     
     if (questao == 11) {
         mostrarPontos();
+        tryAgain.style.display = 'none';
     }
 }
