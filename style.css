@@ -151,3 +151,11 @@ html,  body  {
     margin: 0 auto;
     text-decoration: none;
 }
+
+#historia {
+    width: 1000px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+}
